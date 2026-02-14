@@ -1,73 +1,74 @@
-# React + TypeScript + Vite
+# Parv Sharma - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, high-performance developer portfolio built with **React**, **TypeScript**, and **Tailwind CSS**. Designed with a modern "Apple-style" **Glassmorphism** aesthetic, featuring smooth 3D interactions and physics-based animations.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Key Features
 
-## React Compiler
+- **🎨 Premium Glassmorphism Design**: Frosted glass effects, rich animated mesh gradients, and subtle borders for a high-end feel.
+- **🚀 High Performance**: Built on Vite for instant loading and HMR.
+- **🖱️ Advanced Interactivity**:
+    - **Custom Cursor**: Dual-layer cursor with magnetic hover effects and click animations.
+    - **3D Tilt Projects**: Project cards tilt in 3D space towards your mouse, with dynamic spotlight lighting.
+    - **Smooth Scrolling**: Integrated **Lenis** for buttery smooth, momentum-based scrolling.
+    - **Scroll Progress**: Visual reading progress indicator.
+    - **Typewriter Effect**: Dynamic text animation in the Hero section.
+- **📱 Fully Responsive**: Flawless experience across mobile, tablet, and desktop devices, optimized for various zoom levels.
+- **📧 Functional Contact Form**: Direct `mailto:` integration with subject and body pre-fill.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Framework**: [React](https://reactjs.org/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Scrolling**: [Lenis](https://github.com/studio-freight/lenis)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📂 Project Structure
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+src/
+├── components/         # UI Components
+│   ├── Layout.tsx      # Main layout wrapper (Navbar/Footer)
+│   ├── Hero.tsx        # Landing section with Typewriter/Magnetic effects
+│   ├── About.tsx       # "About Me" section
+│   ├── Projects.tsx    # "Featured Work" with 3D Tilt cards
+│   ├── TechStack.tsx   # Skills grid with glass tiles
+│   ├── Contact.tsx     # Contact form and details
+│   ├── CustomCursor.tsx# Interactive cursor component
+│   └── ...
+├── hooks/              # Custom React hooks
+├── App.tsx             # Main entry point (Routing, Loading)
+└── index.css           # Tailwind & Global styles
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/realparv/myportfolio.git
+    cd myportfolio
+    ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📬 Contact
+- **GitHub**: [realparv](https://github.com/realparv)
+
+---
+
+© 2026 Parv Sharma. Crafted with ♥ using React & Tailwind.
